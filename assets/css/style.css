@@ -36,16 +36,7 @@ family=Lato -> Títulos, textos
     --azulescuro:#00043e;
     --cinza:#303030;
     --cinzaclaro:#818181;
-<<<<<<< HEAD
-<<<<<<< HEAD
     --light:rgb(248, 245, 245);
-=======
-
-
->>>>>>> jefs
-=======
-    --light:rgb(248, 245, 245);
->>>>>>> 616757c5e6168d1620c83f93c3b49181ba8fb7e3
 }
   
 /* GERAL */
@@ -56,27 +47,32 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 img{
     max-width: 800px;
 }
+
 div.flex{
     display: flex;
 }
+
 div.full-container{
     width: 100%;
     margin:0 auto;
     max-width: 1850px;
-    
 }
+
 h2{
     font-family: 'Montserrat';
 }
+
 div.large-container{
     width: 100%;
     margin:0 auto;
     max-width: 1170px;
    
 }
+
 div.container{
     width: 100%;
     margin:0 auto;
@@ -106,8 +102,6 @@ p{
 /* BODY */
   
 /* HEADER */
-
-<<<<<<< HEAD
 header.topo{
     background-color: var(--azulescuro);
     width: 100vw;
@@ -129,9 +123,8 @@ header.topo{
             }
             
             header.topo .large-container figure figcaption{
-                display: none;
-<<<<<<< HEAD
-=======
+                display: none;}
+
 header.topo{}
 
     header.topo .large-container{
@@ -140,12 +133,9 @@ header.topo{}
 
         header.topo .large-container figure{}
 
-            header.topo .large-container figure img{
+            header.topo .large-container figure img{}
                 
->>>>>>> jefs
-=======
->>>>>>> 616757c5e6168d1620c83f93c3b49181ba8fb7e3
-            }
+
 
         header.topo nav ul{
             display: none;
