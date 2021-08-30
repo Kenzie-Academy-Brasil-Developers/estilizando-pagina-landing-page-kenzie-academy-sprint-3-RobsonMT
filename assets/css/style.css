@@ -29,7 +29,14 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    /*Cores utilizadas:*/
+    --branco:#FFFFFF;
+    --azulclaro:#007aff;
+    --azulescuro:#00043e;
+    --cinza:var#303030;
+    --cinzaclaro:var(#818181);
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -49,11 +56,13 @@ div.full-container{
     width: 100%;
     max-width: 1850px;
     margin:0 auto;
+    
 }
 div.large-container{
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
+   
 }
 div.container{
     width: 100%;
@@ -68,19 +77,128 @@ html{}
   
 /* BODY */
 body{}
+
 /* BODY */
   
 /* HEADER */
-header{}
+
+header .topo{}
+
+    header .topo .large-container{}
+
+        header .topo .large-container figure{}
+
+            header .topo .large-container figure img{
+                
+            }
+
+
+
 /* HEADER */
-  
-/* FOOTER */
-footer{}
-/* FOOTER */
 
 /* INICIAL */
-main{}
+
+main .inicial{}
+
+    main .inicial .secaoDestaque{}
+
+        main .inicial .secaoDestaque .secaoDestaqueFormulario{}
+
+    main .secaoSobre{}
+
+        main .secaoSobre .flex{}
+
+            main .secaoSobre .flex .flex-col{}
+
+                main .secaoSobre .flex .flex-col h2{}
+
+                main .secaoSobre .flex .flex-col p{}
+
+                main .secaoSobre .flex .flex-col span{}
+
+                main .secaoSobre .flex .flex-col button{}
+
+
+
+                main .secaoSobre .flex .flex-col figure{}
+
+                    main .secaoSobre .flex .flex-col figure img{}
+
+                main .secaoSobre .flex .flex-col ul{}
+
+                    main .secaoSobre .flex .flex-col ul li{}
+
+    main .secaoCursos{}
+
+        main .secaoCursos article{}
+
+            main .secaoCursos article h2{}
+
+            main .secaoCursos article p{}
+
+            main .secaoCursos article ul{}
+
+                main .secaoCursos article ul li{}
+
+    main .secaoCalendar{} 
+    
+        main .secaoCalendar h2{}
+        
+        main .secaoCalendar p{}
+        
+        main .secaoCalendar .calendario{} 
+
+            main .secaoCalendar .calendario li{}
+            
+            main .secaoCalendar .calendario .calendario-data{}
+            
+            main .secaoCalendar .calendario .calendario-data h3{}
+
+            main .secaoCalendar .calendario .calendario-data p{}
+
+            main .secaoCalendar .calendario .calendario-data .calendario-data-rodape {}
+
+                main .secaoCalendar .calendario .calendario-data .calendario-data-rodape span {}
+
+                main .secaoCalendar .calendario .calendario-data .calendario-data-rodape span button {}
+
+    main .secaoContato{}
+
+        main .secaoContato .flex{}
+
+            main .secaoContato .flex .flex-col{}
+
+                main .secaoContato .flex .flex-col .secaoContato-informacoes{}
+
+                    main .secaoContato .flex .flex-col .secaoContato-informacoes p{}
+
+                    main .secaoContato .flex .flex-col .secaoContato-informacoes ul{}
+
+                        main .secaoContato .flex .flex-col .secaoContato-informacoes ul li{}
+                    
+                            main .secaoContato .flex .flex-col .secaoContato-informacoes ul li a{}
+
+                main .secaoContato .flex .flex-col h2{}
+               
+                main .secaoContato .flex .flex-col form{}
+
+                    main .secaoContato .flex .flex-col form .form-input-model {}
+
+                        main .secaoContato .flex .flex-col form .form-input-model label {}
+
+                        main .secaoContato .flex .flex-col form .form-input-model input {}
+
 /* INICIAL */
+
+/* FOOTER */
+
+footer{}
+
+    footer p{}
+
+    footer a{}
+
+/* FOOTER */
 
 /* EXTRAS */
 
@@ -94,6 +212,8 @@ main{}
 ::-webkit-resizer{}
 
 /* EXTRAS */
+
+
   
 
 /* MEDIA QUERIES */
