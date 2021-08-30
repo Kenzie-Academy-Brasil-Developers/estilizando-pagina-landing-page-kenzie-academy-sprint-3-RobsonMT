@@ -37,11 +37,15 @@ family=Lato -> Títulos, textos
     --cinza:#303030;
     --cinzaclaro:#818181;
 <<<<<<< HEAD
+<<<<<<< HEAD
     --light:rgb(248, 245, 245);
 =======
 
 
 >>>>>>> jefs
+=======
+    --light:rgb(248, 245, 245);
+>>>>>>> 616757c5e6168d1620c83f93c3b49181ba8fb7e3
 }
   
 /* GERAL */
@@ -126,6 +130,7 @@ header.topo{
             
             header.topo .large-container figure figcaption{
                 display: none;
+<<<<<<< HEAD
 =======
 header.topo{}
 
@@ -138,6 +143,8 @@ header.topo{}
             header.topo .large-container figure img{
                 
 >>>>>>> jefs
+=======
+>>>>>>> 616757c5e6168d1620c83f93c3b49181ba8fb7e3
             }
 
         header.topo nav ul{
