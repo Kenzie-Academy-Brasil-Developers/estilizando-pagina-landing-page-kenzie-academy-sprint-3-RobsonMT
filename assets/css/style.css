@@ -34,8 +34,10 @@ family=Lato -> Títulos, textos
     --branco:#FFFFFF;
     --azulclaro:#007aff;
     --azulescuro:#00043e;
-    --cinza:var#303030;
-    --cinzaclaro:var(#818181);
+    --cinza:#303030;
+    --cinzaclaro:#818181;
+
+
 }
   
 /* GERAL */
@@ -78,6 +80,14 @@ html{}
 /* BODY */
 body{}
 
+h2{
+    font-family:Montserrat;
+}
+
+p{
+    font-family: Lato;
+    color: var(--cinzaclaro);
+}
 /* BODY */
   
 /* HEADER */
@@ -128,17 +138,31 @@ main .inicial{}
 
                     main .secaoSobre .flex .flex-col ul li{}
 
-    main .secaoCursos{}
+    main .secaoCursos{
+        text-align: center;
+        padding-top: 40px;
+    }
 
         main .secaoCursos article{}
 
-            main .secaoCursos article h2{}
+            main .secaoCursos article h2{
+                font-size: 19px;
+                padding: 20px;
+            }
 
-            main .secaoCursos article p{}
+            main .secaoCursos article p{
+                font-size: 15px;
+                padding: 20px;
+            }
 
             main .secaoCursos article ul{}
 
                 main .secaoCursos article ul li{}
+
+                main .secaoCursos article ul li img{
+                    max-width: 100px;
+                    padding: 30px;
+                }
 
     main .secaoCalendar{} 
     
