@@ -34,8 +34,9 @@ family=Lato -> Títulos, textos
     --branco:#FFFFFF;
     --azulclaro:#007aff;
     --azulescuro:#00043e;
-    --cinza:var#303030;
-    --cinzaclaro:var(#818181);
+    --cinza:#303030;
+    --cinzaclaro:#818181;
+    --light:rgb(248, 245, 245);
 }
   
 /* GERAL */
@@ -57,6 +58,9 @@ div.full-container{
     max-width: 1850px;
     margin:0 auto;
     
+}
+h2{
+    font-family: 'Montserrat';
 }
 div.large-container{
     width: 100%;
@@ -82,51 +86,197 @@ body{}
   
 /* HEADER */
 
-header .topo{}
+header.topo{
+    background-color: var(--azulescuro);
+    width: 100vw;
+    height: 100px;
+    overflow: hidden;
+}
 
-    header .topo .large-container{}
+    header.topo .large-container{
+        display: flex;
+    }
 
-        header .topo .large-container figure{}
+        header.topo .large-container figure{
+            padding: 10px;
+        }
 
-            header .topo .large-container figure img{
-                
+            header.topo .large-container figure img{
+                width: 80px;
+                padding-left: 10px;
+            }
+            
+            header.topo .large-container figure figcaption{
+                display: none;
             }
 
+        header.topo nav ul{
+            display: none;
+        }
 
+        header.topo nav ul a{
+            font-size: 13px;
+        }
+
+        header.topo span{
+            background-color: azure;
+        }
+        header.topo span img{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: #fff;
+            width: 35px;
+            height: 30px;
+        }
 
 /* HEADER */
 
 /* INICIAL */
 
-main .inicial{}
+main.inicial{}
 
-    main .inicial .secaoDestaque{}
+    main.inicial .secaoDestaque{
+        background-color: var(--azulescuro);
+        height: calc(100vh - 200px);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 120px;
+    }
 
-        main .inicial .secaoDestaque .secaoDestaqueFormulario{}
+        main.inicial .secaoDestaque h2{
+            font-size: 63px;
+            color: #fff;
+            font-family: 'Montserrat';
+            font-weight: 400;
+        }
 
-    main .secaoSobre{}
+        main.inicial .secaoDestaque p{
+            font-size: 21px;
+            margin: 30px;
+            color: #fff;
+            font-family: 'Montserrat';
+        }
 
-        main .secaoSobre .flex{}
+        main.inicial .secaoDestaque .secaoDestaqueFormulario{
+            display: flex;
+        }
 
-            main .secaoSobre .flex .flex-col{}
+        main.inicial .secaoDestaque .secaoDestaqueFormulario input{
+            padding: 10px;
+            border-radius: 5px 0 0 5px;
+        }
 
-                main .secaoSobre .flex .flex-col h2{}
+        main.inicial .secaoDestaque .secaoDestaqueFormulario button{
+            background-color: var(--azulclaro);
+            border-radius: 0 5px 5px 0;
+            font-size: 14px;
+            padding: 10px;
+            color: #fff;
+        }
 
-                main .secaoSobre .flex .flex-col p{}
 
-                main .secaoSobre .flex .flex-col span{}
+    main .secaoSobre{
+        padding: 120px 0 0 0;
+        text-align: center;
 
-                main .secaoSobre .flex .flex-col button{}
+    }
+
+        main .secaoSobre .flex{
+            display: inline;
+            
+            
+        }
+        main .secaoSobre .flex :nth-child(3){
+            background-color: var(--light);
+            
+        }
+        main .secaoSobre .flex :nth-child(4){
+            background-color: var(--light);
+            
+        }
+
+
+            main .secaoSobre .flex .flex-col{
+                display: flex;
+                flex-flow: column wrap;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+                main .secaoSobre .flex .flex-col h2{
+                    font-size: 24px;
+                }
+
+                main .secaoSobre .flex .flex-col p{
+                    size: 19px;
+                    text-align: left;
+                    margin: 50px 0;
+                }
+
+                main .secaoSobre .flex .flex-col span{
+                    color: var(--cinzaclaro);
+                    background-color: #fff;
+                }
+
+                main .secaoSobre .flex .flex-col button{
+                    margin: 50px 0;
+                    padding: 15px;
+                    background-color: #fff;
+                    font-size: 14px;
+                    border-radius: 8px;
+                    border: 2px solid #ccc;
+                }
+                main .secaoSobre .flex .flex-col button:hover{
+                    background-color: var(--cinzaclaro);
+                    color: #fff;
+                }
 
 
 
-                main .secaoSobre .flex .flex-col figure{}
+                main .secaoSobre .flex .flex-col figure{
+                   
+                }
 
-                    main .secaoSobre .flex .flex-col figure img{}
+                    main .secaoSobre .flex .flex-col figure img{
+                        max-width: 75vw;
+                        max-height: 75vh;
+                        margin: 50px 0;
+                        
+                    }
+                    main .secaoSobre .flex .flex-col figure figcaption{
+                        display: none;
+                    }
+                
+                main .secaoSobre .flex .left-col h2{
+                    font-family: 'Lato';
+                }
 
-                main .secaoSobre .flex .flex-col ul{}
+                main .secaoSobre .flex .flex-col ul{
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    list-style: disc;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    padding: 0 20px;
+                    line-height: 28px;
+                    color: var(--cinzaclaro);
+                }
 
-                    main .secaoSobre .flex .flex-col ul li{}
+                    main .secaoSobre .flex .flex-col ul li{
+                        text-align: justify;
+                        font-family: 'Lato';
+                    }
+
+                main .secaoSobre .flex .flex-col.left-col figure img{
+                    max-width: 150px;
+                }
+            
 
     main .secaoCursos{}
 
