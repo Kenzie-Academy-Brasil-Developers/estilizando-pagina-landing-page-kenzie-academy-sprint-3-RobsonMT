@@ -194,15 +194,19 @@ main.inicial{}
 
         main.inicial .secaoDestaque .secaoDestaqueFormulario input{
             padding: 10px;
-            border-radius: 5px 0 0 5px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            border: none;
         }
 
         main.inicial .secaoDestaque .secaoDestaqueFormulario button{
             background-color: var(--azulclaro);
-            border-radius: 0 5px 5px 0;
             font-size: 14px;
             padding: 10px;
             color: #fff;
+            border: none;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
         }
 
 
