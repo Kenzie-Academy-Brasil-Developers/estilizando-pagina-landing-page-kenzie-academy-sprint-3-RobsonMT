@@ -407,11 +407,7 @@ main.inicial{}
                         font-size: 20px;
                         margin-bottom: 20px;
                         }
-                    
 
-
-
-            
 
     main .secaoContato{
         display: flex;
@@ -491,20 +487,7 @@ main.inicial{}
                 margin-right: 15px;
             }
                     
-                    
-        
-
-
-
-        
-        
-
-                    
-
-                    
-
-      
-
+            
 /* INICIAL */
 
 /* FOOTER */
@@ -544,6 +527,289 @@ footer{}
 
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
+        
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+        header.topo{
+            
+        }
+        
+            header.topo .large-container{
+                
+            }
+        
+                header.topo .large-container figure{
+                   
+                }
+        
+                    header.topo .large-container figure img{
+                       
+                    }
+                    
+                    header.topo .large-container figure figcaption{
+                        
+        
+        header.topo{}
+        
+            header.topo .large-container{
+               
+            }
+        
+                header.topo .large-container figure{}
+        
+                    header.topo .large-container figure img{}
+                        
+        
+        
+                header.topo nav ul{
+                    
+                }
+        
+                header.topo nav ul a{
+                    
+                }
+        
+                header.topo span{
+                   
+                }
+                header.topo span img{
+                    
+                }
+        
+        /* HEADER */
+        
+        /* INICIAL */
+        
+        main.inicial{}
+        
+            main.inicial .secaoDestaque{
+                
+            }
+        
+                main.inicial .secaoDestaque h2{
+                    
+                }
+        
+                main.inicial .secaoDestaque p{
+                    
+                }
+        
+                main.inicial .secaoDestaque .secaoDestaqueFormulario{
+                   
+                }
+        
+                main.inicial .secaoDestaque .secaoDestaqueFormulario input{
+                    
+                }
+        
+                main.inicial .secaoDestaque .secaoDestaqueFormulario button{
+                    
+                }
+        
+        
+            main .secaoSobre{
+               
+        
+            }
+        
+                main .secaoSobre .flex{
+                    
+                    
+                    
+                }
+                main .secaoSobre .flex :nth-child(3){
+                    
+                    
+                }
+                main .secaoSobre .flex :nth-child(4){
+                    
+                    
+                }
+        
+        
+                    main .secaoSobre .flex .flex-col{
+                        
+                    }
+        
+                        main .secaoSobre .flex .flex-col h2{
+                            
+                        }
+        
+                        main .secaoSobre .flex .flex-col p{
+                            
+                        }
+        
+                        main .secaoSobre .flex .flex-col span{
+                            
+                        }
+        
+                        main .secaoSobre .flex .flex-col button{
+                            
+                        }
+                        main .secaoSobre .flex .flex-col button:hover{
+                            
+                        }
+        
+        
+        
+                        main .secaoSobre .flex .flex-col figure{
+                           
+                        }
+        
+                            main .secaoSobre .flex .flex-col figure img{
+                                
+                                
+                            }
+                            main .secaoSobre .flex .flex-col figure figcaption{
+                                
+                            }
+                        
+                        main .secaoSobre .flex .left-col h2{
+                            
+                        }
+        
+                        main .secaoSobre .flex .flex-col ul{
+                            
+                        }
+        
+                            main .secaoSobre .flex .flex-col ul li{
+                                
+                            }
+        
+                        main .secaoSobre .flex .flex-col.left-col figure img{
+                            
+                        }
+                    
+        
+            main .secaoCursos{
+                
+            }
+        
+                main .secaoCursos article{}
+        
+                    main .secaoCursos article h2{
+                        
+                    }
+        
+                    main .secaoCursos article p{
+                        
+                    }
+        
+                    main .secaoCursos article ul{}
+        
+                        main .secaoCursos article ul li{}
+        
+                        main .secaoCursos article ul li img{
+                            
+                        }
+        
+            main .secaoCalendar{
+                
+            } 
+            
+                main .secaoCalendar h2{}
+                
+                main .secaoCalendar > p{
+                   
+                }
+                
+                main .secaoCalendar .calendario{
+                    
+                } 
+        
+                    main .secaoCalendar .calendario li{
+                        
+                    }
+                    
+                        main .secaoCalendar .calendario .calendario-data{
+                            
+                            
+                        }
+                    
+                        main .secaoCalendar .calendario li h3{
+                        
+                        
+                        }
+        
+                        main .secaoCalendar .calendario li p{
+                            
+                        }
+        
+                        main .secaoCalendar .calendario .calendario-data-rodape{}
+        
+                            main .secaoCalendar .calendario .calendario-data-rodape span{
+                               
+                            }
+        
+                            main .secaoCalendar .calendario .calendario-data-rodape button{
+                                
+                                }
+        
+        
+            main .secaoContato{
+               
+            }
+        
+                main .secaoContato h2{
+                    
+                }
+                
+        
+                main .secaoContato .secaoContato-informacoes {} 
+        
+                main .secaoContato .secaoContato-informacoes p {
+                    
+                } 
+                
+                main .secaoContato .secaoContato-informacoes ul {
+                    
+                }
+                
+                    main .secaoContato .secaoContato-informacoes li {
+                        
+                    }
+        
+                    main .secaoContato .secaoContato-informacoes li a {
+                    }
+        
+                 main .secaoContato form{}
+        
+                    main .secaoContato form .form-input-model{
+                        
+                    }
+        
+                        main .secaoContato form .form-input-model label{
+                                  
+        
+                        }
+        
+                        main .secaoContato form .form-input-model input{
+                           
+                        }
+                        main .secaoContato form .form-input-model textarea{
+                           
+                        }
+                        
+                    main .secaoContato form .buttom{
+                        
+                    }
+                            
+                    
+        /* INICIAL */
+        
+        /* FOOTER */
+        
+        footer{}
+        
+        #footer__anchor {
+            
+        }
+        
+            footer p{
+                
+            }
+        
+            footer a{}
+    }
+    }
 /* MEDIA QUERIES */
