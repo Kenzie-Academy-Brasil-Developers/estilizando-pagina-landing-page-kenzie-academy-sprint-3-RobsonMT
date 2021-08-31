@@ -423,7 +423,9 @@ main.inicial{}
         main .secaoContato h2{
             margin: 40px 0 20px;
             text-transform: uppercase;
+            box-sizing: border-box;
         }
+        
 
         main .secaoContato .secaoContato-informacoes {} 
 
@@ -433,16 +435,23 @@ main.inicial{}
             text-align: initial;
         } 
         
-        main .secaoContato .secaoContato-informacoes ul {}
+        main .secaoContato .secaoContato-informacoes ul {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            margin-left: 60px;
+        }
         
             main .secaoContato .secaoContato-informacoes li {
                 display: flex;
+                align-items: center;
             }
 
             main .secaoContato .secaoContato-informacoes li a {
                 text-decoration: none;
                 color: var(--cinzaclaro);
                 line-height: 2;
+                margin-left: 3px;
             }
 
          main .secaoContato form{}
@@ -498,7 +507,16 @@ main.inicial{}
 
 footer{}
 
-    footer p{}
+#footer__anchor {
+    display: flex;
+    color: #007aff;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+    footer p{
+        display: none;
+    }
 
     footer a{}
 
