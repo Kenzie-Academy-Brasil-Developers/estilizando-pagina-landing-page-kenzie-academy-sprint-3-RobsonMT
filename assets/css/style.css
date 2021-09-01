@@ -38,7 +38,6 @@ family=Lato -> Títulos, textos
     --cinzaclaro:#818181;
     --light:rgb(248, 245, 245);
 }
-  
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
@@ -47,7 +46,6 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
 img{
     max-width: 800px;
 }
@@ -68,7 +66,6 @@ h2{
 div.large-container{
     width: 100%;
     margin:0 auto;
-    /* max-width: 1170px; */
 }
 
 div.container{
@@ -89,9 +86,9 @@ p{
     font-family: Lato;
 }
 /* GERAL */
-  
-/* BODY */
 
+
+/* BODY */
 /* HEADER */
 header.topo{
     overflow: hidden;
@@ -99,329 +96,316 @@ header.topo{
     width: 100%;
 }
 
-    header.topo .large-container{
-        display: flex;
-        height: 100px;
-        width: 100%;
-        background-color: #00043e;
-    }
+header.topo .large-container{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #00043e;
+}
 
+header.topo .large-container figure{
+    padding: 10px;
+}
 
-        header.topo .large-container figure{
-            padding: 10px;
-        }
+header.topo .large-container figure img{
+    width: 80px;
+    padding-left: 10px;
+}
 
-        header.topo .large-container figure img{
-            width: 80px;
-            padding-left: 10px;
-        }
-        
-        header.topo .large-container figure figcaption{
-            display: none;
-        }
+header.topo .large-container figure figcaption{
+    display: none;
+}
 
-        header.topo nav.wrap--menu{
-            padding-right: 50px;
-            width: 100%;
-        }
+header.topo nav.wrap--menu{
+    padding-right: 50px;
+    width: 100%;
+}
 
-        header.topo nav ul{
-            background-color: rgb(117, 115, 133,99%);
-        }
+header.topo nav ul{
+    background-color: rgb(117, 115, 133,99%);
+}
 
-        header.topo nav ul li{
-            padding: 10px;
-        }
+header.topo nav ul li{
+    padding: 10px;
+}
 
-        header.topo nav ul a{
-            font-size: 13px;
-            color: var(--cinza);
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: 700;  
-            line-height: 30px;
-        }
+header.topo nav ul a{
+    font-size: 13px;
+    color: var(--cinza);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;  
+    line-height: 30px;
+}
 
-        /* MENU */
+/* MENU */
+.menu{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 200ms linear;
+}
+.btnMenu--open{
+    position: relative;
+    width: 100%;
+    top: 20px;
+    right: -90%;
+    background-image: url("../img/menu.svg");
+    padding: 10px;
+    margin: 10px;    
+}
 
-        .menu{
-            position: absolute;
-            width: 100%;
-            top: 0;
-            left: 0;
-            transition: transform 200ms linear;
-        }
-        .btnMenu--open{
-            position: relative;
-            width: 100%;
-            top: 20px;
-            right: -90%;
-            background-image: url("../img/menu.svg");
-            padding: 10px;
-            margin: 10px;    
-        }
-        
-        .btnMenu--close{
-            background-image: url("../img/close-menu.svg");
-            padding: 10px;
-            margin: 8px;
-        }
-        
-        .btnMenu{
-            background-repeat: no-repeat;
-            background-position: 15px center;
-            text-indent: -9999px;
-            display: block;
-        }
-        
-        .menuClose{
-            display: none;
-        }
+.btnMenu--close{
+    background-image: url("../img/close-menu.svg");
+    padding: 10px;
+    margin: 8px;
+}
+
+.btnMenu{
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    text-indent: -9999px;
+    display: block;
+}
+
+.menuClose{
+    display: none;
+}
 /* HEADER */
 
 /* INICIAL */
+main.inicial .secaoDestaque{
+    background-color: var(--azulescuro);
+    height: calc(100vh - 300px);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 80px;
+}
 
-main.inicial{}
+main.inicial .secaoDestaque h2{
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
 
-    main.inicial .secaoDestaque{
-        background-color: var(--azulescuro);
-        height: calc(100vh - 300px);
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding-bottom: 80px;
+main.inicial .secaoDestaque p{
+    font-size: 25px;
+    margin: 30px;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+main.inicial .secaoDestaque .secaoDestaqueFormulario{
+    display: flex;
+}
+
+main.inicial .secaoDestaque .secaoDestaqueFormulario input{
+    padding: 15px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+}
+
+main.inicial .secaoDestaque .secaoDestaqueFormulario button{
+    background-color: var(--azulclaro);
+    font-size: 14px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+main .secaoSobre{
+    padding: 120px 0 0 0;
+    text-align: center;
+}
+
+main .secaoSobre .flex{
+    display: inline;
+}
+
+main .secaoSobre .flex :nth-child(3){
+    background-color: var(--light);
+}
+main .secaoSobre .flex :nth-child(4){
+    background-color: var(--light);
+}
+
+main .secaoSobre .flex .flex-col{
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .secaoSobre .flex .flex-col h2{
+    font-size: 24px;
+}
+
+main .secaoSobre .flex .flex-col p{
+    size: 19px;
+    text-align: left;
+    
+    margin: 50px 0;
+}
+
+main .secaoSobre .flex .flex-col span{
+    color: var(--cinzaclaro);
+    background-color: #fff;
+}
+
+main .secaoSobre .flex .flex-col button{
+    margin: 30px 0;
+    padding: 15px;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    width: 180px;
+}
+main .secaoSobre .flex .flex-col button:hover{
+    background-color: var(--cinzaclaro);
+    color: #fff;
+}
+
+main .secaoSobre .flex .flex-col figure img{
+    max-width: 80vw;
+    max-height: 80vh;
+    margin: 30px 0;
+    padding: 20px;
+}
+main .secaoSobre .flex .flex-col figure figcaption{
+    display: none;
+}
+
+main .secaoSobre .flex .left-col h2{
+    font-family: 'Lato';
+}
+
+main .secaoSobre .flex .flex-col ul{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    list-style: disc;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 30px;
+    line-height: 28px;
+    color: var(--cinzaclaro);
+}
+
+main .secaoSobre .flex .flex-col ul li{
+    text-align: justify;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
+main .secaoSobre .flex .flex-col.left-col figure img{
+    max-width: 150px;
+}
+
+main .secaoCursos{
+    padding-top: 40px;
+    text-align: center;
+}
+
+main .secaoCursos article h2{
+    padding: 20px;
+    font-size: 19px;
+}
+
+main .secaoCursos article p{
+    padding: 20px;
+        font-size: 15px;
     }
     
-        main.inicial .secaoDestaque h2{
-            font-size: 40px;
-            color: #fff;
-            font-family: 'Montserrat';
-            font-weight: 400;
-        }
-
-        main.inicial .secaoDestaque p{
-            font-size: 25px;
-            margin: 30px;
-            color: #fff;
-            font-family: 'Montserrat';
-        }
-
-        main.inicial .secaoDestaque .secaoDestaqueFormulario{
-            display: flex;
-        }
-
-        main.inicial .secaoDestaque .secaoDestaqueFormulario input{
-            padding: 15px;
-            border-top-left-radius: 3px;
-            border-bottom-left-radius: 3px;
-            border: none;
-        }
-
-        main.inicial .secaoDestaque .secaoDestaqueFormulario button{
-            background-color: var(--azulclaro);
-            font-size: 14px;
-            padding: 10px;
-            color: #fff;
-            border: none;
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 3px;
-        }
-
-
-    main .secaoSobre{
-        padding: 120px 0 0 0;
-        text-align: center;
-
+    main .secaoCursos article ul li img{
+        padding: 30px;
+        max-width: 100px;
     }
-
-        main .secaoSobre .flex{
-            display: inline;
-            
-            
-        }
-        main .secaoSobre .flex :nth-child(3){
-            background-color: var(--light);
-            
-        }
-        main .secaoSobre .flex :nth-child(4){
-            background-color: var(--light);
-            
-        }
-
-            main .secaoSobre .flex .flex-col{
-                display: flex;
-                flex-flow: row wrap;
-                padding-left: 30px;
-                padding-right: 30px;
-                align-content: center;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-
-                main .secaoSobre .flex .flex-col h2{
-                    font-size: 24px;
-                }
-
-                main .secaoSobre .flex .flex-col p{
-                    size: 19px;
-                    text-align: left;
-                    margin: 50px 0;
-                }
-
-                main .secaoSobre .flex .flex-col span{
-                    color: var(--cinzaclaro);
-                    background-color: #fff;
-                }
-
-                main .secaoSobre .flex .flex-col button{
-                    margin: 30px 0;
-                    padding: 15px;
-                    background-color: #fff;
-                    font-size: 14px;
-                    border-radius: 8px;
-                    border: 2px solid #ccc;
-                    width: 180px;
-                }
-                main .secaoSobre .flex .flex-col button:hover{
-                    background-color: var(--cinzaclaro);
-                    color: #fff;
-                }
-
-                    main .secaoSobre .flex .flex-col figure img{
-                        max-width: 80vw;
-                        max-height: 80vh;
-                        margin: 30px 0;
-
-                        padding: 20px;
-                    }
-                    main .secaoSobre .flex .flex-col figure figcaption{
-                        display: none;
-                    }
-                
-                main .secaoSobre .flex .left-col h2{
-                    font-family: 'Lato';
-                }
-
-                main .secaoSobre .flex .flex-col ul{
-                    margin-top: 50px;
-                    margin-bottom: 50px;
-                    list-style: disc;
-                    display: flex;
-                    flex-flow: column;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    padding: 0 30px;
-                    line-height: 28px;
-                    color: var(--cinzaclaro);
-                }
-
-                    main .secaoSobre .flex .flex-col ul li{
-                        text-align: justify;
-                        font-family: 'Lato';
-                        font-size: 20px;
-                    }
-
-                main .secaoSobre .flex .flex-col.left-col figure img{
-                    max-width: 150px;
-                }
-
-    main .secaoCursos{
-        padding-top: 40px;
-        text-align: center;
-    }
-
-            main .secaoCursos article h2{
-                padding: 20px;
-                font-size: 19px;
-            }
-
-            main .secaoCursos article p{
-                padding: 20px;
-                font-size: 15px;
-            }
-
-                main .secaoCursos article ul li img{
-                    padding: 30px;
-                    max-width: 100px;
-                }
-
+    
     main .secaoCalendar{
         padding-top: 80px;
         text-align: center;
         padding-bottom: 80px;
     } 
     
-        main .secaoCalendar h2{
-            font-size: 19px;
-        }
-        
-        main .secaoCalendar > p{
-            padding: 30px;
-            color: black;
-            font-size: 15px;
-        }
-        
-        main .secaoCalendar .calendario{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        } 
-
-            main .secaoCalendar .calendario li{
-                display: flex;
-                flex-direction: column;
-                height: 550px;
-                width: 60%;
-                border: 1px solid var(--azulescuro);
-                box-sizing: border-box;
-                justify-content: space-between;
-                margin-bottom: 60px;
-            }
-            
-                main .secaoCalendar .calendario .calendario-data{
-                    font-size: 36px;
-                    background: #00043e;
-                    color: #fff;
-                    padding: 30px 50px;
-                    
-                }
-            
-                main .secaoCalendar .calendario li h3{
-                    font-size: 19px;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                
-                }
-
-                main .secaoCalendar .calendario li p{
-                    font-size: 15px;
-                    line-height: 2;
-                    margin-bottom: 20px;
-                }
-
-                    main .secaoCalendar .calendario .calendario-data-rodape span{
-                        display: flex;
-                        flex-direction: column;
-                        font-size: 30px;
-                        color: var(--cinzaclaro);
-                        padding-top: 20px;
-                        padding-bottom: 20px;
-                        border-top: 1px dotted var(--cinzaclaro)
-                    }
-
-                    main .secaoCalendar .calendario .calendario-data-rodape button{
-                        background-color: var(--azulclaro);
-                        border-radius: 5px;
-                        color: #fff;
-                        border: 1px;
-                        padding: 8px 60px;
-                        font-size: 20px;
-                        margin-bottom: 20px;
-                        }
-
-
+    main .secaoCalendar h2{
+        font-size: 19px;
+    }
+    
+    main .secaoCalendar > p{
+        padding: 30px;
+        color: black;
+        font-size: 15px;
+    }
+    
+    main .secaoCalendar .calendario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    
+    main .secaoCalendar .calendario li{
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        width: 60%;
+        border: 1px solid var(--azulescuro);
+        box-sizing: border-box;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    
+    main .secaoCalendar .calendario .calendario-data{
+        font-size: 36px;
+        background: #00043e;
+        color: #fff;
+        padding: 30px 50px;
+    }
+    
+    main .secaoCalendar .calendario li h3{
+        font-size: 19px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    main .secaoCalendar .calendario li p{
+        font-size: 15px;
+        line-height: 2;
+        margin-bottom: 20px;
+    }
+    
+    main .secaoCalendar .calendario .calendario-data-rodape span{
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        color: var(--cinzaclaro);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 1px dotted var(--cinzaclaro)
+    }
+    
+    main .secaoCalendar .calendario .calendario-data-rodape button{
+        background-color: var(--azulclaro);
+        border-radius: 5px;
+        color: #fff;
+        border: 1px;
+        padding: 8px 60px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
     main .secaoContato{
         display: flex;
         height: 500px;
@@ -432,473 +416,342 @@ main.inicial{}
         color: var(--cinza);
         font-size: 15px;
     }
-
-        main .secaoContato h2{
-            margin: 40px 0 20px;
-            text-transform: uppercase;
-            box-sizing: border-box;
-        }
-
-
-        main .secaoContato .secaoContato-informacoes p {
-            line-height: 1.5;
-            padding: 0px 60px;
-            text-align: initial;
-        } 
-        
-        main .secaoContato .secaoContato-informacoes ul {
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-            margin-left: 60px;
-        }
-        
-            main .secaoContato .secaoContato-informacoes li {
-                display: flex;
-                align-items: center;
-            }
-
-            main .secaoContato .secaoContato-informacoes li a {
-                text-decoration: none;
-                color: var(--cinzaclaro);
-                line-height: 2;
-                margin-left: 3px;
-            }
-
-
-            main .secaoContato form .form-input-model{
-                margin: 15px;
-            }
-
-                main .secaoContato form .form-input-model label{
-                    display: none;           
-
-                }
-
-                main .secaoContato form .form-input-model input{
-                    border-style: solid;
-                    border-width: 0.5px;
-                    border-radius: 5px;
-                    border-color: #767676;
-                    padding: 10px;
-                    width: 240px;
-                }
-                main .secaoContato form .form-input-model textarea{
-                    border-width: 0.5px;
-                    border-radius: 5px;
-                    border-color: #767676;
-                    padding: 10px;
-                    width: 240px;
-                }
-                
-            main .secaoContato form .buttom{
-                float: right;
-                padding: 10px;
-                margin-right: 15px;
-            }
-                    
-            
-/* INICIAL */
-
-/* FOOTER */
-
-footer{}
-
-#footer__anchor {
-    display: flex;
-    color: #007aff;
-    padding: 20px 0;
-    justify-content: center;
-    cursor: pointer;
-}
-
+    
+    main .secaoContato h2{
+        margin: 40px 0 20px;
+        text-transform: uppercase;
+        box-sizing: border-box;
+    }
+    
+    main .secaoContato .secaoContato-informacoes p {
+        line-height: 1.5;
+        padding: 0px 60px;
+        text-align: initial;
+    } 
+    
+    main .secaoContato .secaoContato-informacoes ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+    }
+    
+    main .secaoContato .secaoContato-informacoes li {
+        display: flex;
+        align-items: center;
+    }
+    
+    main .secaoContato .secaoContato-informacoes li a {
+        text-decoration: none;
+        color: var(--cinzaclaro);
+        line-height: 2;
+        margin-left: 3px;
+    }
+    
+    main .secaoContato form .form-input-model{
+        margin: 15px;
+    }
+    
+    main .secaoContato form .form-input-model label{
+        display: none;           
+    }
+    
+    main .secaoContato form .form-input-model input{
+        border-style: solid;
+        border-width: 0.5px;
+        border-radius: 5px;
+        border-color: #767676;
+        padding: 10px;
+        width: 240px;
+    }
+    main .secaoContato form .form-input-model textarea{
+        border-width: 0.5px;
+        border-radius: 5px;
+        border-color: #767676;
+        padding: 10px;
+        width: 240px;
+    }
+    
+    main .secaoContato form .buttom{
+        float: right;
+        padding: 10px;
+        margin-right: 15px;
+    }
+    
+    
+    /* INICIAL */
+    
+    /* FOOTER */
+    
+    footer{}
+    
+    #footer__anchor {
+        display: flex;
+        color: #007aff;
+        padding: 20px 0;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
     footer p{
         display: none;
     }
-
-
-/* FOOTER */
-
-/* EXTRAS */
-
-/* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
-
-/* EXTRAS */
-
-/* MEDIA QUERIES */
-    @media screen and (min-width: 400px){}
-        
-  
+    
+    
+    /* FOOTER */
+    /* EXTRAS */
+    /* para estilizar a scrollbar */
+    ::-webkit-scrollbar{
+        background-color: rgb(177, 173, 173);
+    }
+    ::-webkit-scrollbar-button{
+        background-color: rgb(80, 77, 80);
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: var(--azulescuro);
+        border-style: groove;
+    }
+    /* EXTRAS */
+    
+    /* MEDIA QUERIES */
     @media screen and (min-width: 800px) {
-        header.topo{
+        
+        header.topo .large-container figure{
+            padding-left: 90px;
+        }
+        
+        header.topo .large-container figure img{
+            padding-left: 10px;
+        }
+        
+        header.topo nav ul{
+            background-color: var(--azulescuro);
+        }
+        
+        /* MENU */
+        #menu{
+            display: inline-flex;
+            right: 0;
+            top: 30px;
+            width: 60vw;
+            transform: translateX(50%);
+        }
+        
+        #menu li{
+            margin: auto;
+            font-family: 'Lato';
+        }
+        
+        #menu li a{
+            border-bottom: 3px solid rgb(231, 228, 228,0%);
+            transition: 200ms linear;
+            color: #fff;
+        }
+        
+        #menu li a:hover{
+            border-bottom: 3px solid rgb(231, 228, 228,100%);
+            text-shadow: 1px .2px rgb(153, 150, 150);
+        }
+        
+        .btnMenu--open,.btnMenu--close{    
+            display: none;
+        }
+        
+        /* INICIAL */
+        main.inicial .secaoDestaque{
+            height: calc(100vh - 100px);
+            background-image: url('../img/background-destaque.webp');
+            object-fit: cover;
+            background-size: cover;
+            padding-bottom: 0;
+        }
+        
+        main.inicial .secaoDestaque h2{
+            font-size: 63px;
+        }
+        
+        main.inicial .secaoDestaque p{
+            font-size: 21px;
+            margin: 20px;
+        }
+        
+        main.inicial .secaoDestaque .secaoDestaqueFormulario input{
+            padding: 0 15px;
+            width: 40vw;
+        }
+        
+        main.inicial .secaoDestaque .secaoDestaqueFormulario button{
+            padding: 8px;
+        }
+        
+        main .secaoSobre{
+            display: flex;
+            padding: 70px 0 0 0;
+        }
+        
+        main .secaoSobre .flex{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-column: 50vh 50vh
+        }
+        
+        main .secaoSobre .flex .flex-col{
+            width: 49vw;
+            display: flex;
+            flex-flow: column wrap;
+            padding: 20px;
+        }
+        
+        main .secaoSobre .flex .flex-col h2{
+            text-align: right;
+        }
+        
+        main .secaoSobre .flex .flex-col p{
+            font-size: 19px;
+        }
+        
+        main .secaoSobre .flex .flex-col span{
+            font-size: 19px;
+        }
+        
+        main .secaoSobre .flex .flex-col button{
+            background-color: #fff;
+            font-size: 14px;
+            padding: 10px;
+            color: var(--cinza);
+            width: fit-content;
+        }
+        
+        main .secaoSobre .flex .flex-col figure img{
+            max-width: 30vw;
+        }
+        
+        main .secaoSobre .flex .left-col h2{
+            text-align: start;
+        }
+        
+        main .secaoSobre .flex .flex-col ul li{
+            font-size: 12px;
+            line-height: 2;
+        }   
+        
+        main .secaoSobre .flex .col--python{
+            width: 49vw;
+            display: flex;
+            flex-flow: column wrap;
+            padding-left: 10vw;
+        }
+        
+        main .secaoSobre .flex .col--python span{
+            text-align: start;
+        }
+        
+        main .secaoCursos article ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        main .secaoCursos article ul li{
+            width: 33%;
+        }
+        
+        main .secaoCalendar .calendario{
+            flex-direction: row;
+            justify-content: center;
+            
+        } 
+        
+        main .secaoCalendar .calendario li{
+            width: 250px;
+            margin-inline: 15px;
             
         }
         
-            header.topo .large-container{
-                
-            }
+        main .secaoCalendar .calendario .calendario-data-rodape button{
+            padding: 8px;
+            font-size: 32px;
+        }
         
-                header.topo .large-container figure{
-                    padding-left: 90px;
-                }
+        main .secaoContato{
+            width: 100%;
+        }
         
-                    header.topo .large-container figure img{
-                        padding-left: 10px;
-                    }
-                    
-                    header.topo .large-container figure figcaption{}
-                        
+        main .secaoContato .secaoContato-informacoes {
+            position: relative;
+            right: 27%;
+        }
         
-
-               
+        main .secaoContato form{
+            position: relative;
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+            left: 50%;
+            transform: translate(-90%, -280%);
             
+        }
         
-                header.topo .large-container figure{}
+        main .secaoContato form .form-input-model{
+            margin: 3px;
+        }
         
-                    header.topo .large-container figure img{}
-                        
+        main .secaoContato form .form-input-model input{
+            margin: 5px;
+            padding: 5px;
+            width: 200px;
+        }
+        main .secaoContato form .form-input-model textarea{
+            position: fixed;
+            transform: translate(-104%, 50%);
+            width: 410px;
+        }
         
-        
-                header.topo nav ul{
-
-                }
-        
-                header.topo nav ul a{
-                    
-                }
-        
-                header.topo span{
-                   
-                }
-                header.topo span img{
-                    
-                }
-        
-        
-        /* HEADER */
+        main .secaoContato form .buttom{
+            position: relative;
+            transform: translate(-136%, 370%);
+        }
         
         /* INICIAL */
-        
-        main.inicial{}
-        
-            main.inicial .secaoDestaque{
-                height: calc(100vh - 100px);
-                background-image: url('../img/background-destaque.webp');
-                object-fit: cover;
-                background-size: cover;
-                padding-bottom: 0;
-                
-            }
-        
-                main.inicial .secaoDestaque h2{
-                    font-size: 63px;
-                }
-        
-                main.inicial .secaoDestaque p{
-                    font-size: 21px;
-                    margin: 20px;
-                }
-        
-                main.inicial .secaoDestaque .secaoDestaqueFormulario{
-                   
-                }
-        
-                main.inicial .secaoDestaque .secaoDestaqueFormulario input{
-                    padding: 0 15px;
-                    width: 40vw;
-                }
-        
-                main.inicial .secaoDestaque .secaoDestaqueFormulario button{
-                    padding: 8px;
-
-                    
-                }
-        
-        
-            main .secaoSobre{
-                display: flex;
-                padding: 70px 0 0 0;
-
-            }
-        
-                main .secaoSobre .flex{
-                    display: grid;
-                    grid-template-columns: 50% 50%;
-                    grid-column: 50vh 50vh;
-                    
-                }
-                main .secaoSobre .flex:nth-child(1){
-
-
-                }
-                main .secaoSobre .flex :nth-child(2){
-                    
-                    
-                }
-        
-        
-                    main .secaoSobre .flex .flex-col{
-                        width: 49vw;
-                        display: flex;
-                        flex-flow: column wrap;
-                        padding: 20px;
-                    }
-        
-                        main .secaoSobre .flex .flex-col h2{
-                            text-align: right;
-                        }
-        
-                        main .secaoSobre .flex .flex-col p{
-                            font-size: 19px;
-                        }
-        
-                        main .secaoSobre .flex .flex-col span{
-                            font-size: 19px;
-                        }
-        
-                        main .secaoSobre .flex .flex-col button{
-                            background-color: #fff;
-                            font-size: 14px;
-                            padding: 10px;
-                            color: var(--cinza);
-                            width: fit-content;
-                            
-                        }
-                        main .secaoSobre .flex .flex-col button:hover{
-                            
-                        }
-        
-        
-        
-                        main .secaoSobre .flex .flex-col figure{
-                           
-                        }
-        
-                            main .secaoSobre .flex .flex-col figure img{
-                               max-width: 30vw;
-                                
-                            }
-                            main .secaoSobre .flex .flex-col figure figcaption{
-                                
-                            }
-                        
-                        main .secaoSobre .flex .left-col h2{
-                            text-align: start;
-                        }
-        
-                        main .secaoSobre .flex .flex-col ul{
-                            
-                        }
-        
-                            main .secaoSobre .flex .flex-col ul li{
-                                font-size: 12px;
-                                line-height: 2;
-                            }   
-                        main .secaoSobre .flex .flex-col.left-col figure img{
-                            
-                        }
-                        
-                    main .secaoSobre .flex .col--python{
-                        width: 49vw;
-                        display: flex;
-                        flex-flow: column wrap;
-                        padding-left: 10vw;
-                    }
-                    main .secaoSobre .flex .col--python span{
-                        text-align: start;
-                    }
-
-            main .secaoCursos{
-               
-            }
-        
-                main .secaoCursos article{}
-        
-                    main .secaoCursos article h2{
-                        
-                    }
-        
-                    main .secaoCursos article p{
-                        
-                    }
-        
-                    main .secaoCursos article ul{
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                    }
-        
-                        main .secaoCursos article ul li{
-                            width: 33%;
-                        }
-        
-                        main .secaoCursos article ul li img{}
-        
-            main .secaoCalendar{
-                
-            } 
-            
-                main .secaoCalendar h2{}
-                
-                main .secaoCalendar > p{
-                   
-                }
-                
-                main .secaoCalendar .calendario{
-                    flex-direction: row;
-                    justify-content: center;
-                    
-                } 
-        
-                    main .secaoCalendar .calendario li{
-                        width: 250px;
-                        margin-inline: 15px;
-                        
-                    }
-                    
-                        main .secaoCalendar .calendario .calendario-data{
-                            
-                            
-                        }
-                    
-                        main .secaoCalendar .calendario li h3{
-                        
-                        
-                        }
-        
-                        main .secaoCalendar .calendario li p{
-                            
-                        }
-        
-                        main .secaoCalendar .calendario .calendario-data-rodape{}
-        
-                            main .secaoCalendar .calendario .calendario-data-rodape span{
-                               
-                            }
-        
-                            main .secaoCalendar .calendario .calendario-data-rodape button{
-                                padding: 8px;
-                                font-size: 32px;
-                                }
-        
-        
-            main .secaoContato{
-                width: 100%;
-            }
-        
-                main .secaoContato h2{
-                    
-                }
-                
-        
-                main .secaoContato .secaoContato-informacoes {
-                    position: relative;
-                    right: 27%;
-                }
-                 
-        
-                main .secaoContato .secaoContato-informacoes p {
-                    
-                } 
-                
-                main .secaoContato .secaoContato-informacoes ul {
-                    
-                }
-                
-                    main .secaoContato .secaoContato-informacoes li {
-                        
-                    }
-        
-                    main .secaoContato .secaoContato-informacoes li a {
-                    }
-        
-                 main .secaoContato form{
-                    position: relative;
-                    width: 40%;
-                    display: flex;
-                    flex-direction: row;
-                    left: 50%;
-                    transform: translate(-90%, -280%);
-                   
-                 }
-        
-                    main .secaoContato form .form-input-model{
-                        margin: 3px;
-                    }
-        
-                        main .secaoContato form .form-input-model label{
-                            
-                                  
-        
-                        }
-        
-                        main .secaoContato form .form-input-model input{
-                            margin: 5px;
-                            padding: 5px;
-                            width: 200px;
-                        }
-                        main .secaoContato form .form-input-model textarea{
-                            position: fixed;
-                            transform: translate(-104%, 50%);
-                            width: 410px;
-                        }
-                        
-                    main .secaoContato form .buttom{
-                        position: relative;
-                        transform: translate(-136%, 370%);
-                    }
-                            
-                    
-        /* INICIAL */
-        
         /* FOOTER */
-        
         footer{    
             text-align: center;
         }
         
-        #footer__anchor {}
+        footer p{
+            display: inline;
+            padding-bottom: 20px;
             
+        }
+        
+        footer a{
+            text-decoration: none;
+            color: var(--azulclaro);}
+        }
+        
+        /* MEDIA QUERIES */
+        
+        input:hover::placeholder {
+            padding-left: 10px;
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4s;
+        }
+        
+        textarea:hover::placeholder {
+            padding-left: 10px;
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4s;
+        } 
+        
+        button:hover {
+            font-weight: bold;
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4s;
+        }
         
         
-            footer p{
-                display: inline;
-                padding-bottom: 20px;
-                
-            }
         
-            footer a{
-                text-decoration: none;
-                color: var(--azulclaro);}
-    }
-    
-/* MEDIA QUERIES */
-
-input:hover::placeholder {
-    padding-left: 10px;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-}
-
-
-textarea:hover::placeholder {
-    padding-left: 10px;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-} 
-
-button:hover {
-    font-weight: bold;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-}
+        
+        
