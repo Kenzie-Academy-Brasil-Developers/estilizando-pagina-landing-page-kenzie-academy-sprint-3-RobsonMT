@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="shortcut icon" href="icon-96x96.webp">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Landing Page Kenzie Academy</title>
 </head>
 
@@ -24,15 +24,18 @@
       </figure>
 
       <!-- MENU DE NAVEGAÇÃO -->
-      <nav>
-        <ul>
-          <li><a href="#1">Sobre a Kenzie</a></li>
-          <li><a href="#2">Agenda</a></li>
-          <li><a href="#3">Contato</a></li>
+      <nav class="wrap--menu">
+        <a href="#menu" class="btnMenu btnMenu--open menu_open" onclick="menuOpen()">Menu</a>
+        <ul id="menu" class="menu menuClose">
+          <li class="btnMenu btnMenu--close" onclick="menuOpen()">Sair</li>
+          <li><a href="#secaoSobre">Sobre a Kenzie</a></li>
+          <li><a href="#secaoCalendar">Agenda</a></li>
+          <li><a href="#secaoCursos">Cursos</a></li>
+          <li><a href="#secaoContato">Contato</a></li>
         </ul>
       </nav>
 
-      <span><img src="./assets/img/menu.png" alt="menu--img"></span>
+      <!-- <span><img src="./assets/img/menu.png" alt="menu--img"></span> -->
     </div>
   </header>
 
@@ -54,7 +57,7 @@
     </section>
 
     <!-- SEÇÃO SOBRE -->
-    <section class="secaoSobre">
+    <section class="secaoSobre" id="secaoSobre">
 
       <article class="flex">
 
@@ -113,7 +116,7 @@
     </section>
 
     <!-- SEÇÃO CURSOS -->
-    <section class="secaoCursos">
+    <section class="secaoCursos" id="secaoCursos">
 
       <article>
 
@@ -165,7 +168,7 @@
 
     </section>
 
-    <section class="secaoCalendar">
+    <section class="secaoCalendar" id="secaoCalendar">
 
       <h2>SCHEDULE</h2>
       <p>Lorem ipsum dolor sit schedule</p>
@@ -214,7 +217,7 @@
 
     </section>
 
-    <section class="secaoContato">
+    <section class="secaoContato" id="secaoContato">
 
       <h2>Contact</h2>
 
