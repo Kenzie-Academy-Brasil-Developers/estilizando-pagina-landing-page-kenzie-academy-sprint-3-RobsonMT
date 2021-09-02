@@ -76,6 +76,7 @@ div.container{
 
 h3{
     font-weight: 500;
+    font-size: 19px;
 }
 
 h2{
@@ -630,7 +631,7 @@ main .secaoCursos article p{
         }
         
         main .secaoSobre .flex .flex-col ul li{
-            font-size: 12px;
+            font-size: 19px;
             line-height: 2;
         }   
         
